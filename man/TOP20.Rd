@@ -4,12 +4,14 @@
 \name{TOP20}
 \alias{TOP20}
 \title{Tennis Income}
-\format{A data frame with 15 observations on the following variable: 
+\format{
+A data frame with 15 observations on the following variable: 
 \itemize{
 \item \code{income} (yearly income in millions of dollars)
-}}
+}
+}
 \source{
-\url{http://www.atpworldtour.com/}
+\url{https://www.atptour.com/}
 }
 \usage{
 TOP20
@@ -26,4 +28,3 @@ labs(x = "yearly income in millions of dollars")
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

@@ -4,11 +4,13 @@
 \name{APPLE}
 \alias{APPLE}
 \title{Apple Hardness}
-\format{A data frame with 34 observations on the following two variables: 
+\format{
+A data frame with 34 observations on the following two variables: 
 \itemize{
 \item \code{hardness} (hardness rating measured in \eqn{\texttt{kg}/\texttt{meter}^2} for both the \code{fresh} and \code{warehouse} apples)
 \item \code{location} (\code{factor} with two levels \code{fresh} and \code{warehouse})  
-}}
+}
+}
 \usage{
 APPLE
 }
@@ -29,4 +31,3 @@ qqmath(~hardness, group = location, type = c('p', 'r'), auto.key = TRUE, data = 
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

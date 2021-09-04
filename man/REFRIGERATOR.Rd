@@ -4,11 +4,13 @@
 \name{REFRIGERATOR}
 \alias{REFRIGERATOR}
 \title{Refrigerator Energy Consumption}
-\format{A data frame with 60 observations on the following 2 variables: 
+\format{
+A data frame with 60 observations on the following 2 variables: 
 \itemize{
 \item \code{kilowatts} (energy consumption in kilowatts for a 24 hour period)
 \item \code{group} (factor with levels \code{original} and \code{modified})
-}}
+}
+}
 \usage{
 REFRIGERATOR
 }
@@ -20,10 +22,9 @@ Sixty 18 cubic feet refrigerators were randomly selected from a company's wareho
 ggplot(data = REFRIGERATOR, aes(x = group, y = kilowatts)) + geom_boxplot()
 ggplot(data = REFRIGERATOR, aes(x = group, y = kilowatts, fill = group)) + 
 geom_boxplot() + labs(y = "energy consumption in kilowatts for a 24 hour period") + 
-guides(fill = FALSE) + scale_fill_brewer()
+guides(fill = "none") + scale_fill_brewer()
 }
 \references{
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

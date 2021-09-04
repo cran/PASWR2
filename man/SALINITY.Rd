@@ -4,10 +4,12 @@
 \name{SALINITY}
 \alias{SALINITY}
 \title{Surface-Water Salinity}
-\format{A data frame with 48 observations on the following variable: 
+\format{
+A data frame with 48 observations on the following variable: 
 \itemize{
 \item \code{salinity} (surface-water salinity measurements)
-}}
+}
+}
 \source{
 Davis, J. 1986. \emph{Statistics and Data Analysis in Geology}. John Wiley, New York.
 }
@@ -25,4 +27,3 @@ ggplot(data = SALINITY, aes(x = salinity)) + geom_density(fill = "yellow", alpha
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

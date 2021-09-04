@@ -4,11 +4,13 @@
 \name{KINDER}
 \alias{KINDER}
 \title{Kindergarten Class}
-\format{A data frame with 20 observations on the following 2 variables: 
+\format{
+A data frame with 20 observations on the following 2 variables: 
 \itemize{
 \item \code{ht} (height in inches of each child)
 \item \code{wt} (weight in pounds of each child)
-}}
+}
+}
 \usage{
 KINDER
 }
@@ -24,4 +26,3 @@ y = "weight in pounds")
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

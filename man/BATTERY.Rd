@@ -4,11 +4,13 @@
 \name{BATTERY}
 \alias{BATTERY}
 \title{Lithium Batteries}
-\format{A data frame with 100 observations on the following two variables: 
+\format{
+A data frame with 100 observations on the following two variables: 
 \itemize{
 \item \code{lifetime} (life time measured in hours)
 \item \code{facility} (\code{factor} with two levels \code{A} and \code{B})  
-}}
+}
+}
 \usage{
 BATTERY
 }
@@ -21,7 +23,7 @@ p + geom_density()
 q <- ggplot(data = BATTERY, aes(x = facility, y = lifetime))
 q + geom_violin()
 ggplot(data = BATTERY, aes(x = facility, y = lifetime, fill = facility)) + 
-geom_violin() + scale_fill_brewer() + guides(fill = FALSE)
+geom_violin() + scale_fill_brewer() + guides(fill = "none")
 ggplot(data = BATTERY, aes(sample = lifetime)) + stat_qq() + facet_grid(. ~ facility)
 ggplot(data = BATTERY, aes(sample = lifetime, color = facility)) + stat_qq()
 # lattice approach
@@ -32,4 +34,3 @@ qqmath(~ lifetime, group = facility, type = c('p', 'r'), auto.key=TRUE, data = B
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

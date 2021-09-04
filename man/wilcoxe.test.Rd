@@ -4,8 +4,14 @@
 \alias{wilcoxe.test}
 \title{Wilcoxon Exact Test}
 \usage{
-wilcoxe.test(x, y = NULL, mu = 0, paired = FALSE,
-  alternative = c("two.sided", "less", "greater"), conf.level = 0.95)
+wilcoxe.test(
+  x,
+  y = NULL,
+  mu = 0,
+  paired = FALSE,
+  alternative = c("two.sided", "less", "greater"),
+  conf.level = 0.95
+)
 }
 \arguments{
 \item{x}{is a numeric vector of data values.  Non-finite (i.e. infinite or missing) values will be omitted.}
@@ -43,6 +49,7 @@ Otherwise, if both \code{x} and \code{y} are given and \code{paired = FALSE}, a 
 
 The function is rather primitive and should only be used for problems with fewer than 19 observations as the memory requirements are rather large.
 }
+
 \examples{
  
 # Wilcoxon Signed Rank Test
@@ -58,9 +65,6 @@ wilcoxe.test(x, y)
 rm(PH, x, y)
  
 }
-\author{
-Alan T. Arnholt <arnholtat@appstate.edu>
-}
 \references{
 \itemize{
  \item Gibbons, J.D. and Chakraborti, S. 1992. \emph{Nonparametric Statistical Inference}. Marcel Dekker Inc., New York. 
@@ -70,5 +74,7 @@ Alan T. Arnholt <arnholtat@appstate.edu>
 \seealso{
 \code{\link{wilcox.test}}
 }
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
 \keyword{htest}
-

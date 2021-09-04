@@ -4,11 +4,13 @@
 \name{SWIMTIMES}
 \alias{SWIMTIMES}
 \title{Swim Times}
-\format{A data frame with 28 observations on the following 2 variables: 
+\format{
+A data frame with 28 observations on the following 2 variables: 
 \itemize{
 \item \code{seconds} (time improvement in seconds)
 \item \code{diet} (a factor with levels \code{lowfat} and \code{highfat})
-}}
+}
+}
 \usage{
 SWIMTIMES
 }
@@ -21,10 +23,9 @@ Times for the thirty-two swimmers for the 200 yard individual medley were taken 
 \examples{
 wilcox.test(seconds ~ diet, data = SWIMTIMES)
 ggplot(data = SWIMTIMES, aes(x = diet, y = seconds, fill = diet)) + geom_violin() + 
-guides(fill = FALSE) + scale_fill_brewer()
+guides(fill = "none") + scale_fill_brewer()
 }
 \references{
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

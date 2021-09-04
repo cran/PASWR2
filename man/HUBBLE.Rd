@@ -4,11 +4,13 @@
 \name{HUBBLE}
 \alias{HUBBLE}
 \title{Hubble Telescope}
-\format{A data frame with 15 observations on the following 2 variables: 
+\format{
+A data frame with 15 observations on the following 2 variables: 
 \itemize{
 \item \code{team1} (days to complete scenario)
 \item \code{team2} (days to complete scenario)
-}}
+}
+}
 \usage{
 HUBBLE
 }
@@ -29,4 +31,3 @@ ggplot(data = HUBBLE, aes(sample = team1 - team2)) + stat_qq(color = "blue")
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

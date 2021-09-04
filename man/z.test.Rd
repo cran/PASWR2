@@ -4,9 +4,18 @@
 \alias{z.test}
 \title{z-Test}
 \usage{
-z.test(x, sigma.x = NULL, y = NULL, sigma.y = NULL, sigma.d = NULL,
-  alternative = c("two.sided", "less", "greater"), mu = 0, paired = FALSE,
-  conf.level = 0.95, ...)
+z.test(
+  x,
+  sigma.x = NULL,
+  y = NULL,
+  sigma.y = NULL,
+  sigma.d = NULL,
+  alternative = c("two.sided", "less", "greater"),
+  mu = 0,
+  paired = FALSE,
+  conf.level = 0.95,
+  ...
+)
 }
 \arguments{
 \item{x}{a (non-empty) numeric vector of data values}
@@ -61,6 +70,7 @@ The assumption of normality for the underlying distribution or a sufficiently la
 
  For each of the above tests, an expression for the related confidence interval (returned component \code{conf.int}) can be obtained in the usual way by inverting the expression for the test statistic. Note that, as explained under the description of \code{conf.int}, the confidence interval will be half-infinite when alternative is not \code{"two.sided"} ; infinity will be represented by \code{Inf}.
 }
+
 \examples{
 with(data = GROCERY, z.test(x = amount, sigma.x = 30, conf.level = 0.97)$conf)
 # Example 8.3 from PASWR.
@@ -84,13 +94,10 @@ z.test(x, sigma.x = 0.5, y, sigma.y = 0.5, conf.level = 0.90)
 # sigma.y are both assumed to equal 0.5. The null hypothesis 
 # is that the population mean for 'x' less that for 'y' is zero.  
 # The alternative hypothesis is that this difference is not
-# zero.  A 90\\\% confidence interval for the true difference will 
+# zero.  A 90\\% confidence interval for the true difference will 
 # be computed.
 rm(x, y)  
 
-}
-\author{
-Alan T. Arnholt <arnholtat@appstate.edu>
 }
 \references{
 \itemize{
@@ -103,5 +110,7 @@ Alan T. Arnholt <arnholtat@appstate.edu>
 \seealso{
 \code{\link{zsum.test}}, \code{\link{tsum.test}}
 }
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
 \keyword{htest}
-

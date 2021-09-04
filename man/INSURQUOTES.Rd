@@ -4,11 +4,13 @@
 \name{INSURQUOTES}
 \alias{INSURQUOTES}
 \title{Insurance Quotes}
-\format{A data frame with 15 observations on the following 2 variables: 
+\format{
+A data frame with 15 observations on the following 2 variables: 
 \itemize{
 \item \code{companyA} (quotes from company A in Euros)
 \item \code{companyB} (quotes from company B in Euros)
-}}
+}
+}
 \usage{
 INSURQUOTES
 }
@@ -25,4 +27,3 @@ t.test(companyA, companyB))
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

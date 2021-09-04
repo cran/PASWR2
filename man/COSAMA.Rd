@@ -4,11 +4,13 @@
 \name{COSAMA}
 \alias{COSAMA}
 \title{Cosmed Versus Amatek}
-\format{A data frame with 14 observations on the following 3 variables: 
+\format{
+A data frame with 14 observations on the following 3 variables: 
 \itemize{\item \code{subject} (subject number)
 \item \code{cosmed} (measured VO2 with Cosmed)
 \item \code{amatek} (measured VO2 with Amatek) 
-}}
+}
+}
 \usage{
 COSAMA
 }
@@ -38,4 +40,3 @@ bwplot(~ (cosmed - amatek), data = COSAMA)
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

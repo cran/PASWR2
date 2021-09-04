@@ -4,12 +4,14 @@
 \name{TIRE}
 \alias{TIRE}
 \title{Stopping Distance}
-\format{A data frame with 24 observations on the following 3 variables: 
+\format{
+A data frame with 24 observations on the following 3 variables: 
 \itemize{
 \item \code{stopdist} (stopping distance measured to the nearest foot)
 \item \code{tire} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D})
 \item \code{order} (order the experiment was conducted)
-}}
+}
+}
 \usage{
 TIRE
 }
@@ -18,18 +20,17 @@ The data frame \code{TIRE} has the stopping distances measured to the nearest fo
 }
 \examples{
 ggplot(data = TIRE, aes(x = reorder(tire, stopdist, FUN = median), y = stopdist, 
-fill = tire)) + geom_boxplot() + guides(fill = FALSE) + 
+fill = tire)) + geom_boxplot() + guides(fill = "none") + 
 labs(y = "Stopping distance in feet", x = "Tire Brand") + scale_fill_brewer()
 summary(aov(stopdist ~ tire, data = TIRE))
 p <- ggplot(data = TIRE, aes(x = reorder(tire, stopdist, FUN = mean), 
 y = stopdist, fill = tire))
 p + geom_boxplot(width = 0.6) + geom_dotplot(binaxis = "y", stackdir = "center",
-binwidth = 2) + guides(fill = FALSE) + scale_fill_brewer() + 
-stat_summary(fun.y = mean, geom = "point", fill = "black", shape = 23, size = 3) +
+binwidth = 2) + guides(fill = "none") + scale_fill_brewer() + 
+stat_summary(fun = mean, geom = "point", fill = "black", shape = 23, size = 3) +
 labs(x = "Tire Brand", y = "Stopping distance in feet")
 }
 \references{
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

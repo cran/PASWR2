@@ -4,10 +4,12 @@
 \name{GD}
 \alias{GD}
 \title{Times Until Failure}
-\format{A data frame with 100 observations on the following variable: 
+\format{
+A data frame with 100 observations on the following variable: 
 \itemize{
 \item \code{attf} (times until failure in hours)
-}}
+}
+}
 \usage{
 GD
 }
@@ -23,4 +25,3 @@ geom_density(color = "gray", size = 1) + labs( x = "time until failure in hours"
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

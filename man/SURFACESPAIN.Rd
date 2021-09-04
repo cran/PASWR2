@@ -4,11 +4,13 @@
 \name{SURFACESPAIN}
 \alias{SURFACESPAIN}
 \title{Surface Area for Spanish Communities}
-\format{A data frame with 17 observations on the following 2 variables: 
+\format{
+A data frame with 17 observations on the following 2 variables: 
 \itemize{
 \item \code{community} (a factor with levels \code{Andalucia}, \code{Aragon},\code{Asturias}, \code{Baleares}, \code{C.Valenciana}, \code{Canarias}, \code{Cantabria}, \code{Castilla-La Mancha}, \code{Castilla-Leon}, \code{Cataluna}, \code{Extremadura}, \code{Galicia}, \code{La Rioja}, \code{Madrid}, \code{Murcia}, \code{Navarre}, and \code{P.Vasco})
 \item \code{surface} (surface area in \eqn{\texttt{km}^2})
-}}
+}
+}
 \usage{
 SURFACESPAIN
 }
@@ -29,4 +31,3 @@ barchart(community ~ surface, data = SURFACESPAIN)
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

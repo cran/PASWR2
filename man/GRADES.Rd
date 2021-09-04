@@ -4,11 +4,13 @@
 \name{GRADES}
 \alias{GRADES}
 \title{GPA and SAT Scores}
-\format{A data frame with 200 observations on the following 2 variables: 
+\format{
+A data frame with 200 observations on the following 2 variables: 
 \itemize{
 \item \code{sat} (SAT score)
 \item \code{gpa} (grade point average)
-}}
+}
+}
 \usage{
 GRADES
 }
@@ -27,4 +29,3 @@ ggplot(data = GRADES, aes(x = sat, y = gpa)) + geom_point() + geom_smooth()
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

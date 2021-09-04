@@ -4,12 +4,14 @@
 \name{STATTEMPS}
 \alias{STATTEMPS}
 \title{Student Temperatures}
-\format{A data frame with 34 observations on the following 3 variables: 
+\format{
+A data frame with 34 observations on the following 3 variables: 
 \itemize{
 \item \code{temperature} (temperature in Fahrenheit)
 \item \code{gender} (a factor with levels \code{Female} and \code{Male})
 \item \code{class} (a factor with levels \code{8 a.m.} and \code{9 a.m.})
-}}
+}
+}
 \usage{
 STATTEMPS
 }
@@ -24,4 +26,3 @@ p + geom_violin()
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

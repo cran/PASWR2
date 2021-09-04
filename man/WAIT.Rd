@@ -4,10 +4,12 @@
 \name{WAIT}
 \alias{WAIT}
 \title{Waiting Time}
-\format{A data frame with 15 observations on the following variable: 
+\format{
+A data frame with 15 observations on the following variable: 
 \itemize{
 \item \code{minutes} (waiting time in minutes)
-}}
+}
+}
 \usage{
 WAIT
 }
@@ -21,4 +23,3 @@ with(data= WAIT, wilcox.test(minutes, mu = 6, alternative = "less"))
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

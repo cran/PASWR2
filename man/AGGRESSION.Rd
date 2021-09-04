@@ -4,11 +4,13 @@
 \name{AGGRESSION}
 \alias{AGGRESSION}
 \title{TV and Behavior}
-\format{A data frame with 16 observations on the following two variables: 
+\format{
+A data frame with 16 observations on the following two variables: 
 \itemize{
 \item \code{violence} (an integer vector)
 \item \code{noviolence} (an integer vector)
-}}
+}
+}
 \source{
 Gibbons, J. D. (1977) \emph{Nonparametric Methods for Quantitavie Analysis}. American Science Press.
 }
@@ -26,7 +28,7 @@ AL <- reshape(AGGRESSION, varying = c("violence", "noviolence"),
 v.names = "aggression", direction = "long")
 ggplot(data = AL, aes(x = factor(time), y = aggression, fill = factor(time))) + 
 geom_boxplot() + labs(x = "") + scale_x_discrete(breaks = c(1, 2), 
-labels = c("Violence", "No Violence")) + guides(fill = FALSE) + scale_fill_brewer()
+labels = c("Violence", "No Violence")) + guides(fill = "none") + scale_fill_brewer()
 rm(AL)
 with(data = AGGRESSION, 
 wilcox.test(violence, noviolence, paired = TRUE, alternative = "greater"))
@@ -35,4 +37,3 @@ wilcox.test(violence, noviolence, paired = TRUE, alternative = "greater"))
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

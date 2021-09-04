@@ -4,11 +4,13 @@
 \name{APTSIZE}
 \alias{APTSIZE}
 \title{Apartment Size}
-\format{A data frame with 15 observations on the following two variables:
+\format{
+A data frame with 15 observations on the following two variables:
 \itemize{
 \item \code{size} (apartment size in square meters)
 \item \code{location} (\code{factor} with two levels \code{SanJorge} and \code{Mendebaldea})
-}}
+}
+}
 \usage{
 APTSIZE
 }
@@ -22,17 +24,17 @@ scale_x_discrete(breaks = c("Mendebaldea", "SanJorge"),
 labels =c("Mendebaldea", "San Jorge")) + scale_fill_brewer()
 p + geom_boxplot()
 # remove the legend
-p + geom_boxplot() + guides(fill = FALSE)
+p + geom_boxplot() + guides(fill = "none")
 # violin plot
-p + geom_violin(scale = 'area') + guides(fill = FALSE)
-p + geom_violin(scale = 'count') + guides(fill = FALSE)
-p + geom_violin() + geom_boxplot(width = 0.15, fill = 'black') + guides(fill = FALSE) + 
-stat_summary(fun.y = median, geom = "point", fill = "white", shape = 23, size = 3)
+p + geom_violin(scale = 'area') + guides(fill = "none")
+p + geom_violin(scale = 'count') + guides(fill = "none")
+p + geom_violin() + geom_boxplot(width = 0.15, fill = 'black') + guides(fill = "none") + 
+stat_summary(fun = median, geom = "point", fill = "white", shape = 23, size = 3)
 # dotplot
 p + geom_dotplot(binaxis = "y", stackdir = "center", binwidth = 3) + 
-guides(fill = FALSE)
+guides(fill = "none")
 p + geom_boxplot(width = 0.4) + geom_dotplot(binaxis = "y", stackdir = "center", 
-binwidth = 3) + guides(fill = FALSE) + scale_fill_brewer(type = "qual", palette = 1)
+binwidth = 3) + guides(fill = "none") + scale_fill_brewer(type = "qual", palette = 1)
 # base graphics
 boxplot(size ~ location, data = APTSIZE, col = c("red", "yellow"), 
 ylab = "Apartment size (square meters)")
@@ -41,4 +43,3 @@ ylab = "Apartment size (square meters)")
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

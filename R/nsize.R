@@ -46,8 +46,8 @@ nsize <- function(b, sigma = NULL, p = 0.5, conf.level = 0.95, type = c("mu", "p
         "\n")
     cat("mean with a", conf.level,
         "confidence interval so that the margin", "\n")
-    cat("of error is no more than", b, "is", n,"\b.", "\n")
-    cat("\n\n")
+    cat("of error is no more than ", b, " is ", n,".", "\n", sep = "")
+    cat("\n")
   }
   else if(type == "pi") {
     z <- qnorm(1 - (1 - conf.level)/2)
@@ -58,8 +58,8 @@ nsize <- function(b, sigma = NULL, p = 0.5, conf.level = 0.95, type = c("mu", "p
         "\n")
     cat("proportion of successes with a", conf.level,
         "confidence interval", "\n")
-    cat("so that the margin of error is no more than", b, "is",
-        n,"\b.", "\n")
-    cat("\n\n")
+    cat("so that the margin of error is no more than ", b, " is ",
+        n,".", "\n", sep ="")
+    cat("\n")
   }
 }

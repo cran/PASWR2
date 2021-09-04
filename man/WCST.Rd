@@ -4,10 +4,12 @@
 \name{WCST}
 \alias{WCST}
 \title{Wisconsin Card Sorting Test}
-\format{A data frame with 50 observations on the following variable: 
+\format{
+A data frame with 50 observations on the following variable: 
 \itemize{
 \item \code{score} (score on the Wisconsin Card Sorting Test)
-}}
+}
+}
 \usage{
 WCST
 }
@@ -25,4 +27,3 @@ color ="blue")
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

@@ -4,13 +4,15 @@
 \name{PHENYL}
 \alias{PHENYL}
 \title{Phenylketonuria}
-\format{A data frame with 46 observations on the following 4 variables: 
+\format{
+A data frame with 46 observations on the following 4 variables: 
 \itemize{
 \item \code{Q10.1} (level of Q10 at time 1 in micromoles)
 \item \code{Q10.2} (level of Q10 at time 2 in micromoles)
 \item \code{Q10.3} (level of Q10 at time 3 in micromoles)
 \item \code{Q10.4} (level of Q10 at time 4 in micromoles)
-}}
+}
+}
 \source{
 Artuch, R., \emph{et. al.} 2004. \dQuote{Study of Antioxidant Status in Phenylketonuric Patients.} \emph{Clinical Biochemistry}, \bold{37}: 198-203.
 }
@@ -35,4 +37,3 @@ t.test(Q10.1, conf.level = 0.99))
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

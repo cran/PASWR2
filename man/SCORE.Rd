@@ -4,10 +4,12 @@
 \name{SCORE}
 \alias{SCORE}
 \title{Standardized Test Scores}
-\format{A data frame with 20 observations on the following  variable: 
+\format{
+A data frame with 20 observations on the following  variable: 
 \itemize{
 \item \code{scores} (standardized test score)
-}}
+}
+}
 \usage{
 SCORE
 }
@@ -21,4 +23,3 @@ ggplot(data = SCORE, aes(sample = scores)) + stat_qq()
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

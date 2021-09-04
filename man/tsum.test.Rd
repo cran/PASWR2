@@ -4,9 +4,19 @@
 \alias{tsum.test}
 \title{Summarized t-test}
 \usage{
-tsum.test(mean.x, s.x = NULL, n.x = NULL, mean.y = NULL, s.y = NULL,
-  n.y = NULL, alternative = c("two.sided", "less", "greater"), mu = 0,
-  var.equal = FALSE, conf.level = 0.95, ...)
+tsum.test(
+  mean.x,
+  s.x = NULL,
+  n.x = NULL,
+  mean.y = NULL,
+  s.y = NULL,
+  n.y = NULL,
+  alternative = c("two.sided", "less", "greater"),
+  mu = 0,
+  var.equal = FALSE,
+  conf.level = 0.95,
+  ...
+)
 }
 \arguments{
 \item{mean.x}{a single number representing the sample mean of \code{x}}
@@ -66,6 +76,7 @@ If \code{y} is \code{NULL}, a one-sample t-test is carried out with \code{x}. If
 
  For each of the above tests, an expression for the related confidence interval (returned component \code{conf.int}) can be obtained in the usual way by inverting the expression for the test statistic. Note that, as explained under the description of \code{conf.int}, the confidence interval will be half-infinite when alternative is not \code{"two.sided"} ; infinity will be represented by \code{Inf}.
 }
+
 \examples{
  
 # 95\% Confidence Interval for mu1 - mu2, assuming equal variances
@@ -74,9 +85,6 @@ s.y = sqrt((560 - 11*(77/11)^2)/10), n.x = 15, n.y = 11, var.equal = TRUE)$conf,
 # One Sample t-test
 tsum.test(mean.x = 4, s.x = 2.89, n.x = 25, mu = 2.5)  
  
-}
-\author{
-Alan T. Arnholt <arnholtat@appstate.edu>
 }
 \references{
 \itemize{
@@ -89,5 +97,7 @@ Alan T. Arnholt <arnholtat@appstate.edu>
 \seealso{
 \code{\link{z.test}}, \code{\link{zsum.test}}
 }
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
 \keyword{htest}
-

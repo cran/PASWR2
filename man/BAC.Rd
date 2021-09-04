@@ -4,11 +4,13 @@
 \name{BAC}
 \alias{BAC}
 \title{Blood Alcohol Content}
-\format{A data frame with 10 observations of the following 2 variables: 
+\format{
+A data frame with 10 observations of the following 2 variables: 
 \itemize{
 \item \code{X} (blood alcohol content measured in g/L) 
 \item \code{Y} (blood alcohol content measured in g/L)
-}}
+}
+}
 \usage{
 BAC
 }
@@ -22,13 +24,13 @@ var.test(X, Y, alternative = "less"))
 # library(reshape2)
 # BACL <- melt(BAC, variable.name = "company", value.name = "bac")
 # ggplot(data = BACL, aes(x = company, y = bac, fill = company)) + 
-# geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() + 
+# geom_boxplot() + guides(fill = "none") + scale_fill_brewer() + 
 # labs(y = "blood alcohol content measured in g/L")
 # Convert with reshape()
 BACL <- reshape(BAC, varying = c("X", "Y"), v.names = "bac", timevar = "company", 
 direction = "long")
 ggplot(data = BACL, aes(x = factor(company), y = bac, fill = factor(company))) + 
-geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() + 
+geom_boxplot() + guides(fill = "none") + scale_fill_brewer() + 
 labs(y = "blood alcohol content measured in g/L", x = "") + 
 scale_x_discrete(breaks = c(1, 2), labels = c("Company X", "Company Y"))
 
@@ -39,4 +41,3 @@ boxplot(BAC$Y, BAC$X)
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

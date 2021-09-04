@@ -4,10 +4,12 @@
 \name{TESTSCORES}
 \alias{TESTSCORES}
 \title{Statistics Grades}
-\format{A data frame with 29 observations on the following variable: 
+\format{
+A data frame with 29 observations on the following variable: 
 \itemize{
 \item \code{grade} (test score)
-}}
+}
+}
 \usage{
 TESTSCORES
 }
@@ -22,4 +24,3 @@ fill = "cornsilk", color = "gray60", alpha = 0.7)
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

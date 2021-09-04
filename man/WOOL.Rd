@@ -4,11 +4,13 @@
 \name{WOOL}
 \alias{WOOL}
 \title{Wool Production}
-\format{A data frame with 30 observations on the following 2 variables: 
+\format{
+A data frame with 30 observations on the following 2 variables: 
 \itemize{
 \item \code{production} (wool production in thousands of kilograms)
 \item \code{location} (a factor with levels \code{textileA} and \code{textileB}.)
-}}
+}
+}
 \usage{
 WOOL
 }
@@ -17,11 +19,10 @@ Random sample of wool production in thousands of kilograms on 5 different days a
 }
 \examples{
 ggplot(data = WOOL, aes(location, production, fill = location)) + geom_boxplot() + 
-guides(fill = FALSE) + scale_fill_brewer()
+guides(fill = "none") + scale_fill_brewer()
 t.test(production ~ location, data = WOOL)
 }
 \references{
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

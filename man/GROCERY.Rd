@@ -4,10 +4,12 @@
 \name{GROCERY}
 \alias{GROCERY}
 \title{Grocery Spending}
-\format{A data frame with 30 observations on the following variable: 
+\format{
+A data frame with 30 observations on the following variable: 
 \itemize{
 \item \code{amount} (total dollars spent on groceries)
-}}
+}
+}
 \usage{
 GROCERY
 }
@@ -27,4 +29,3 @@ labs(x = "Weekly grocery bill (in dollars)")
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

@@ -4,10 +4,12 @@
 \name{SDS4}
 \alias{SDS4}
 \title{M1 Motorspeedway Times}
-\format{A data frame with 40 observations on the following variable: 
+\format{
+A data frame with 40 observations on the following variable: 
 \itemize{
 \item \code{times} (interarrival times to the nearest second)
-}}
+}
+}
 \source{
 Hand, D. J., \emph{et. al.} 1994. \emph{A Handbook of Small Data Sets}. Chapman & Hall, London.
 }
@@ -28,4 +30,3 @@ labs(x = "interarrival times to the nearest second", y = "")
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

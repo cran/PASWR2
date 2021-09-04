@@ -4,13 +4,15 @@
 \name{BIOMASS}
 \alias{BIOMASS}
 \title{Beech Trees}
-\format{A data frame with 42 observations on the following 4 variables: 
+\format{
+A data frame with 42 observations on the following 4 variables: 
 \itemize{
 \item \code{diameter} (diameter of the stem in centimeters)
 \item \code{height} (height of the tree in meters)
 \item \code{stemweight} (weight of the stem in kilograms)
 \item \code{aboveweight} (aboveground weight in kilograms)  
-}}
+}
+}
 \source{
 \emph{Gobierno de Navarra} and \emph{Gestion Ambiental Viveros y Repoblaciones de Navarra}, 2006.  The data were obtained within the European Project FORSEE.
 }
@@ -32,4 +34,3 @@ labs(x = "diameter of the stem in centimeters", y = "above ground weight in kilo
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

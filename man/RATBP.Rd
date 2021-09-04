@@ -4,11 +4,13 @@
 \name{RATBP}
 \alias{RATBP}
 \title{Rat Blood Pressure}
-\format{A data frame with 12 observations on the following 2 variables: 
+\format{
+A data frame with 12 observations on the following 2 variables: 
 \itemize{
 \item \code{mmHg} (drops in blood pressure in mm of Hg where positive values are decreases, negative values are increases)
 \item \code{group} (factor with levels \code{control} and \code{treatment})
-}}
+}
+}
 \source{
 The data is originally from Ott and Mendenhall (\emph{Understanding Statistics}, 1985, problem 8.17).
 }
@@ -22,11 +24,10 @@ Twelve rats were chosen, and a drug was administered to six rats, the treatment 
 # Boxplot
 ggplot(data = RATBP, aes(x = group, y = mmHg)) + geom_boxplot()
 ggplot(data = RATBP, aes(x = group, y = mmHg, fill = group)) + geom_boxplot() + 
-guides(fill = FALSE) + labs(x = "", y = "drops in blood pressure in mm  of Hg") + 
+guides(fill = "none") + labs(x = "", y = "drops in blood pressure in mm  of Hg") + 
 scale_fill_brewer()
 }
 \references{
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

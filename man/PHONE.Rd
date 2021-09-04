@@ -4,10 +4,12 @@
 \name{PHONE}
 \alias{PHONE}
 \title{Telephone Call Times}
-\format{A data frame with 23 observations on the following variable: 
+\format{
+A data frame with 23 observations on the following variable: 
 \itemize{
 \item \code{call.time} (time spent on long distance calls in minutes)
-}}
+}
+}
 \usage{
 PHONE
 }
@@ -22,4 +24,3 @@ SIGN.test(call.time, md = 2.1))
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

@@ -4,10 +4,12 @@
 \name{TOE}
 \alias{TOE}
 \title{Nuclear Energy}
-\format{A data frame with 12 observations on the following variable: 
+\format{
+A data frame with 12 observations on the following variable: 
 \itemize{
 \item \code{energy} (nuclear energy measured in tons of oil equivalent)
-}}
+}
+}
 \usage{
 TOE
 }
@@ -22,4 +24,3 @@ fill = "pink")
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

@@ -4,11 +4,13 @@
 \name{FCD}
 \alias{FCD}
 \title{Fat Cats}
-\format{A data frame with 36 observations on the following 2 variables: 
+\format{
+A data frame with 36 observations on the following 2 variables: 
 \itemize{
 \item \code{weight} (difference in weight (grams))
 \item \code{diet} (a factor with levels \code{A}, \code{B}, and \code{C})
-}}
+}
+}
 \usage{
 FCD
 }
@@ -25,4 +27,3 @@ aov(weight ~ diet, data = FCD)
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

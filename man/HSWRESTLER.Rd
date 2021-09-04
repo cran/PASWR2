@@ -4,7 +4,8 @@
 \name{HSWRESTLER}
 \alias{HSWRESTLER}
 \title{High School Wrestlers}
-\format{A data frame with 78 observations on the following 9 variables: 
+\format{
+A data frame with 78 observations on the following 9 variables: 
 \itemize{
 \item \code{age} (age of wrestler in years)
 \item \code{ht} (height of wrestler in inches)
@@ -15,7 +16,8 @@
 \item \code{hwfat} (hydrostatic measure of percent fat)
 \item \code{tanfat} (Tanita measure of percent fat)
 \item \code{skfat} (skin fold measure of percent fat)
-}}
+}
+}
 \source{
 Data provided by Dr. Alan Utter, Department of Health Leisure and Exercise Science, Appalachian State University
 }
@@ -40,4 +42,3 @@ y = "hydrostatic measure of percent fat")
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-
